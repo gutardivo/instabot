@@ -5,7 +5,7 @@ pw = input("Password: ")
 
 class InstaBot:
     def __init__(self, username, pw):
-        self.driver = webdriver.Chrome(executable_path='/Users/mac/Desktop/Python/chromedriver')
+        self.driver = webdriver.Chrome(executable_path='/path/to/chromedriver')
         self.driver.get("https://www.instagram.com/accounts/login/")
         sleep(2)
         self.driver.find_element_by_xpath("//input[@name=\"username\"]")\
